@@ -1,0 +1,115 @@
+p{
+    line-height: 1.5em;/*interlineado*/
+    padding-bottom: 7em;
+    padding-left: 3em;
+}
+
+.line{
+    /*linia divisora*/
+    height: 1px;
+    margin: 1em 0;
+    overflow: hidden;
+    }
+    
+    article .line{
+        /*linia divisora dentro de los articulos */
+        background-color:  black;
+    }
+    
+.logo{
+    padding: 30px 25px 25px;
+}
+
+/*hipervinculo*/
+
+a, a:visited{
+    /*para quitarle el subrayado al hipervinculo*/
+    text-decoration: none;
+}
+
+nav{
+    background: rgb(20, 160, 48);
+    position: absolute;
+    right: 0;
+    top:4em;
+}
+
+nav.links{
+    background: rgb(20, 160, 48) ;
+    position: absolute;
+    right: 0;
+    top:4em;
+}
+
+nav ul li {
+    /*para que el menu se muestre de forma horizontal*/
+    display: inline;
+}
+
+nav ul li a, 
+nav ul li a:visited{
+    color: black;
+    display: block;
+    float: left;
+    font-size: 1,25em;
+    font-weight: bold;
+    margin: 5px 2px;
+    padding: 7px 10px 4px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: #F0F0F0;
+}
+
+nav, article, nav ul li a, figure{
+    /* bordes redondiados*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    border-radius: 10px;
+}
+
+/* artculos */
+
+#page{
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+article{
+    background-color: rgb(20, 160, 48);
+    margin: 3em 0;
+    padding: 20px;
+    text-shadow: 0 2px 0 black;
+}
+
+
+/*para mostrar un espacio despues de cada article */
+
+.clear:after{
+    color: ".";
+    display:block;
+    height: 0;
+    clear: both;
+    visibility:  hidden;
+}
+
+/* figure e imagen */
+
+figure{
+    float:left;
+    margin-left: 7px;
+    overflow: hidden;
+}
+
+figure img{
+    margin-left: 4px;
+}
+
+div.cabeza{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(241, 241, 241);
+    padding: 10px;
+}
